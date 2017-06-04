@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.lesports.recycle.R;
 import com.lesports.recycle.adapter.RecyclerAdapter;
+import com.lesports.recycle.decoration.SelectorItemDecoration;
 import com.lesports.recycle.widget.BottomRecycleView;
 import com.lesports.recycle.widget.CenterLayoutView;
 import com.lesports.recycle.widget.ParentScrollView;
@@ -47,6 +48,7 @@ public class Test1Activity extends Activity{
         mAdapter = new RecyclerAdapter(this);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         mBottomView.setLayoutManager(manager);
+        mBottomView.addItemDecoration(new SelectorItemDecoration(15));
         mBottomView.setAdapter(mAdapter);
         mParentView.setBottomView(mBottomView);
         init();

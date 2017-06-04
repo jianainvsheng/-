@@ -48,8 +48,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<DemoHolder> {
 
 
         View baseView = LayoutInflater.from(mContext).inflate(R.layout.demo_recycle_item,parent,false);
-        baseView.setFocusable(true);
-        baseView.setFocusableInTouchMode(true);
+//        baseView.setFocusable(true);
+//        baseView.setFocusableInTouchMode(true);
         DemoHolder demoHolder = new DemoHolder(baseView);
         return demoHolder;
     }

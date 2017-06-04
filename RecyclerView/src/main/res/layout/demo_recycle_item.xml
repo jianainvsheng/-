@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:layout_marginBottom="20dp"
+    android:background="@android:color/black"
+
     >
 
     <TextView
@@ -21,11 +21,14 @@
         android:paddingBottom="15dp"
         android:text="sadasdsad"
         android:gravity="center"
+        android:focusable="false"
+
         />
     <com.lesports.recycle.widget.PathView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@+id/demo_item_text"
         android:layout_marginTop="10dp"
+        android:focusable="false"
         />
 </RelativeLayout>

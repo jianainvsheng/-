@@ -6,9 +6,12 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.ViewGroup;
 
 import com.lesports.recycle.adapter.RecyclerAdapter;
 import com.lesports.recycle.application.LeApplication;
+import com.lesports.recycle.decoration.PullItemDecoration;
+import com.lesports.recycle.decoration.SelectorItemDecoration;
 import com.lesports.recycle.stack.BaseStack;
 
 import java.util.ArrayList;
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) this.findViewById(R.id.demo_recycler);
         GridLayoutManager manager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(manager);
+        recyclerView.addItemDecoration(new PullItemDecoration(30));
+        //recyclerView.setDescendantFocusability(ViewGroup.FOCUS_AFTER_DESCENDANTS);
         mAdapter = new RecyclerAdapter(this);
         recyclerView.setAdapter(mAdapter);
         initData(100);
