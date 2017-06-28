@@ -105,7 +105,8 @@ public class ParentScrollView extends ViewGroup {
                 BaseChildAction action = (BaseChildAction) getChildAt(2);
                 Log.d("ParentSrollview"," **************start************");
                 Log.d("ParentSrollview"," mScrollerY: " + mScrollerY);
-                Log.d("ParentSrollview"," downY: " + downY);
+                Log.d("ParentSrollview"," mLastY: " + mLastY);
+                Log.d("ParentSrollview"," y: " + y);
                 Log.d("ParentSrollview"," getY(): " + event.getY());
                 Log.d("ParentSrollview"," newScrollY: " + newScrollY);
                 Log.d("ParentSrollview"," Height(): " + getChildAt(0).getMeasuredHeight());
